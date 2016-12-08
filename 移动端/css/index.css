@@ -1,0 +1,444 @@
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+}
+img{
+	vertical-align: top;
+	border: none;
+}
+a{
+	text-decoration: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+input{
+	margin: 0;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+dl,dd{
+	margin: 0;
+}
+p{
+	margin: 0;
+}
+/*清除样式*/
+
+/*------------第一页-----------------*/
+html{
+	height: 100%;
+	width: 100%;
+}
+body{
+	margin: 0;
+	font-family: Arial,"微软雅黑";
+	/*overflow: hidden;*/
+	height: 100%;
+	width: 100%;
+	font-size: 0.7rem;
+}
+#page1{
+	position: absolute;
+	z-index: 100;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+}
+#Hpage{
+	width: 100%;
+	position: absolute;
+	top: 10%;
+	left: 0;
+	opacity: 0;
+	-webkit-animation:1s Hpage; 
+	animation:1s Hpage;
+	-webkit-animation-fill-mode:forwards; 
+	animation-fill-mode:forwards;
+	-webkit-transform:translateY(2.25rem);
+	transform:translateY(2.25rem);
+}
+@-webkit-keyframes Hpage
+{
+	100%
+	{
+		-webkit-transform:translateY(0rem);
+		opacity:1;
+	}	
+}
+.Hyun{
+	position: absolute;
+}
+.Hshan{
+	width: 100%;
+	position: relative;
+}
+.Hyun:nth-of-type(2) {
+	left: 12.375rem;
+	top: 0.4275rem;
+	width: 1.813rem;
+	height: 1.438rem;
+	animation:Hyun 3s 2s infinite alternate linear;
+	-webkit-animation:Hyun 3s 2s infinite alternate linear;
+}
+.Hyun:nth-of-type(3) {
+	left: 2.375rem;
+	top: 2.375rem;
+	width: 2.9375rem;
+	height: 2.1875rem;
+	animation:Hyun 3s 2.3s infinite alternate linear;
+	-webkit-animation:Hyun 3s 2.3s infinite alternate linear;
+}
+.Hyun:nth-of-type(4) {
+	left: 8.5625rem;
+	top: 4rem;
+	width: 1.6875rem;
+	height: 1.25rem;
+	animation:Hyun 3s 2.5s infinite alternate linear;
+	-webkit-animation:Hyun 3s 2.5s infinite alternate linear;
+}
+@-webkit-keyframes Hyun
+{
+	0%
+	{
+		-webkit-transform:translateX(0rem);
+	}
+	100%
+	{
+		-webkit-transform:translateX(-2.125rem);
+	}
+	
+}
+#Hlog{
+	width: 100%;
+	position: relative;
+	margin-top: 1.5625rem;
+	opacity: 0;
+	transform: translateY(3.125rem);
+	-webkit-animation: 1s 0.3s Hpage;
+	-webkit-animation-fill-mode: forwards;
+}
+.log51{
+	width: 100%;
+}
+.logShake{
+	width: 0.8rem;
+	height: 0.8rem;
+	position: absolute;
+	top: -1.0125rem;
+	left: 12.8125rem;
+	-webkit-animation: logshake 0.5s 2s;
+}
+@-webkit-keyframes logshake
+{
+	0%
+	{
+		-webkit-transform:rotate(-50deg);
+	}
+	10%
+	{
+		-webkit-transform:rotate(45deg);
+	}
+	20%
+	{
+		-webkit-transform:rotate(-40deg);
+	}
+	30%
+	{
+		-webkit-transform:rotate(35deg);
+	}
+	40%
+	{
+		-webkit-transform:rotate(-30deg);
+	}
+	50%
+	{
+		-webkit-transform:rotate(25deg);
+	}
+	60%
+	{
+		-webkit-transform:rotate(-20deg);
+	}
+	70%
+	{
+		-webkit-transform:rotate(15deg);
+	}
+	80%
+	{
+		-webkit-transform:rotate(-10deg);
+	}
+	90%
+	{
+		-webkit-transform:rotate(5deg);
+	}
+	100%
+	{
+		-webkit-transform:rotate(0deg);
+	}
+}
+.logCCTV{
+	width: 100%;
+	padding-top: 0.8rem;
+	opacity: 0;
+    transform: translateY(30px);
+    -webkit-animation: Hpage 1s .6s;
+    -webkit-animation-fill-mode: forwards;
+}
+#page1_logo{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 5%;
+	opacity: 0;
+    -webkit-animation: page1_logo .5s 1s;
+    -webkit-animation-fill-mode: forwards;
+}
+#page1_logo img{
+	width: 100%;
+}
+@-webkit-keyframes page1_logo
+{
+	100%
+	{
+		opacity: 1;
+	}
+}
+#page1{
+	opacity: 1;
+	-webkit-animation: page1 1s 4s;
+	-webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes page1
+{
+	100%
+	{
+		opacity: 0;
+	}
+}
+
+/*----------------------第二页------------------------------*/
+#page2{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+#page2_picture{
+	width: 100%;
+	height: 7.5rem; 
+	position: relative;
+	overflow: hidden;
+}
+#page2_list{
+	width: 500%;
+	height: 7.5rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+}
+#page2_list li{
+	float: left;
+	width: 20%;
+}
+#page2_list li img{
+	width: 100%;
+	height: 7.5rem;
+}
+#page2_tu{
+	width: 100%;
+	height: 2.3rem;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background: -webkit-linear-gradient(bottom,rgba(0,0,0,0.9) 0,rgba(0,0,0,0.8) 10%,rgba(0,0,0,0));
+}
+#page2_tu p{
+	font-size: 0.8125rem;
+	line-height: 2.3rem;
+	text-indent: 1rem;
+	color: white;
+}
+#page2_tu nav{
+	position: absolute;
+	right: 1rem;
+	top: 1rem;
+}
+#page2_tu nav a{
+	float: left;
+	width: 0.4rem;
+	height: 0.4rem;
+	margin-left: 0.5rem;
+	background: white;
+	border-radius: 50%;
+	opacity: 0.5;
+}
+/*------JS添加样式: 轮播图小白点-------*/
+#page2_tu nav .active{
+	opacity: 1;
+}
+/*-----------------*/
+/*-----------新闻线索------------*/
+#newsBtn{
+	position: absolute;
+	top: 0.625rem;
+	right: 0.625rem;
+	width: 1.79rem;
+	height: 1.79rem;
+	color: yellow;
+	background:rgba(230,0,18,0.6);
+	border-radius: 30% 30%;
+	text-align: center;
+	font-size: 0.6rem;
+	-webkit-animation: newsBtn 2s alternate infinite;
+}
+@-webkit-keyframes newsBtn
+{
+    0% { box-shadow: 0px 0px 0px 0px rgba(0,0,0,0),0px 0px 0px 1px rgba(230,0,18,0); }
+    10%{ box-shadow: 0px 0px 0px 1px rgba(0,0,0,0), 0px 0px 0px 2px rgba(230,0,18,0.1);}
+    20%{ box-shadow: 0px 0px 0px 2px rgba(0,0,0,0), 0px 0px 0px 4px rgba(230,0,18,0.2);}
+    40%{ box-shadow: 0px 0px 0px 0px rgba(0,0,0,0), 0px 0px 0px 1px rgba(230,0,18,0.1),0px 0px 0px 4px rgba(0,0,0,0), 0px 0px 0px 6px rgba(230,0,18,0.3);}
+    50%{ box-shadow: 0px 0px 0px 1px rgba(0,0,0,0), 0px 0px 0px 3px rgba(230,0,18,0.2),0px 0px 0px 5px rgba(0,0,0,0), 0px 0px 0px 8px rgba(230,0,18,0.4);}
+    60%{ box-shadow: 0px 0px 0px 2px rgba(0,0,0,0), 0px 0px 0px 5px rgba(230,0,18,0.3),0px 0px 0px 6px rgba(0,0,0,0), 0px 0px 0px 10px rgba(230,0,18,0.5);}
+    70%{ box-shadow: 0px 0px 0px 3px rgba(0,0,0,0), 0px 0px 0px 6px rgba(230,0,18,0.4),0px 0px 0px 7px rgba(0,0,0,0), 0px 0px 0px 11px rgba(230,0,18,0.4);}
+    80%{ box-shadow: 0px 0px 0px 4px rgba(0,0,0,0), 0px 0px 0px 7px rgba(230,0,18,0.3),0px 0px 0px 8px rgba(0,0,0,0), 0px 0px 0px 12px rgba(230,0,18,0.3);}
+    90%{ box-shadow: 0px 0px 0px 5px rgba(0,0,0,0), 0px 0px 0px 6px rgba(230,0,18,0.2),0px 0px 0px 9px rgba(0,0,0,0), 0px 0px 0px 13px rgba(230,0,18,0.2);}
+    100%{ box-shadow: 0px 0px 0px 7px rgba(0,0,0,0), 0px 0px 0px 7px rgba(230,0,18,0.1),0px 0px 0px 10px rgba(0,0,0,0), 0px 0px 0px 14px rgba(230,0,18,0);}
+}
+/*---------------------*/
+#grade{
+	padding: 0.3rem 0 0.5rem 0.7rem;
+	line-height: 1.5rem;
+	border-bottom: 0.0625rem solid #e5e5e5;
+}
+#grade h2{
+	font-size: 0.75rem;
+}
+#grade li{
+	position: relative;
+}
+#grade nav{
+	position: absolute;
+	left: 4.75rem;
+	top: 0.2rem;
+}
+#grade nav a{
+	float: left;
+	width: 1.05rem;
+	height: 0.9875rem;
+	margin-right: 0.9875rem;
+	/*background: url(../img/star.png) no-repeat -0.9875rem 0;*/
+	background: url(../img/star.png) no-repeat -1.1rem -0.05rem;
+	background-size: 2.09rem 0.9875rem;
+	transition: 0.3s;
+}
+/*------JS添加样式： 五角星变色-------*/
+#grade nav .active{
+	/*background-position: 0 0;*/
+	background-position: 0 -0.05rem;
+}
+/*-----------------*/
+#label{
+	padding: 0.6rem 0 0 0.6125rem;
+	height: 10.125rem;
+}
+#label h2{
+	font-size: 0.75rem;
+	line-height: 1.5rem;
+}
+#label label{
+	float: left;
+	line-height: 1.5625rem;
+	margin: 0.3125rem 0.5rem 0.3125rem 0;
+}
+#label label input{
+	display: none;
+}
+#label label span{
+	float: left;
+	border: 0.0625rem solid #cdd6e1;
+	padding: 0 0.6875rem;
+	border-radius: 0.8rem 0.8rem;
+}
+#page2_btn{
+		display: block;
+	width: 15rem;
+	height: 2.25rem;
+	border: none;
+	border-radius: 0.225rem;
+	background-color: #3c9bbb;
+	font-size: 0.75rem; 
+	font-weight: bold;
+	color: white;
+	/*position: absolute;
+	left: 0.5rem;
+	bottom: 0.5rem;*/
+		margin-left: 0.5rem;
+	/*margin-top: 8.5rem;*/
+	outline: none;
+}
+.page2_p{
+	position: absolute;
+	bottom: -1.8rem;
+	width: 100%;
+	text-align: center;
+	line-height: 0.75rem;
+	font-size: 0.75rem;
+	-webkit-transform: scale(0);
+	transform: scale(0);
+	opacity: 0;
+	transition: 0.5s;
+}
+/*------JS添加样式： 点击提交弹出"P"标签内容-------*/
+.page2_p_active{
+	position: absolute;
+	bottom: -0.8rem;
+	width: 100%;
+	text-align: center;
+	line-height: 0.75rem;
+	font-size: 0.75rem;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+	transition: 0.5s;
+}
+/*-----------------*/
+.mask{
+	background: rgba(0,0,0,0.7) url(../img/mask.png) no-repeat center 7.5rem;
+	background-size: 8.8rem;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: 1s;
+	z-index: -10;
+}
+/*------JS添加样式： 点击提交弹出“谢谢评分”-------*/
+.mask_active{
+	background: rgba(0,0,0,0.7) url(../img/mask.png) no-repeat center 7.5rem;
+	background-size: 8.8rem;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	z-index: 90;
+	display: block;
+	transition: 1s;
+}
+/*-----------------*/
+
+
+
+
+
+
+
+
+
+
+
+
